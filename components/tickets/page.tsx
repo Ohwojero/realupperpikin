@@ -4,7 +4,8 @@ export default function Tickets(){
   const tickets = [
     {type:'Regular', price:'₦20,000', desc:'Access to the main show'},
     {type:'VIP', price:'₦50,000', desc:'Front row seats + free drink'},
-    {type:'VVIP', price:'₦30,000', desc:'Premium seating + backstage access'},
+    {type:'VVIP', price:'₦300,000', desc:'Premium seating + backstage access'},
+    {type:'VVIP', price:'₦500,000', desc:'Premium seating + backstage access'},
   ]
 
   return (

@@ -6,7 +6,7 @@ import Footer from '../../components/footer/page'
 
 export default function Page(){
   return (
-    <main>
+    <main id="main-content">
       <Navbar />
       <Hero />
       <Tickets />

@@ -2,28 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #__next {
-  height: 100%;
+@layer base {
+  html, body, #__next {
+    height: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: linear-gradient(180deg, #0f0810 0%, #120717 100%);
+    color: #fff;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  /* Screen reader only content */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .sr-only.focus:not-sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
 }
 
-html { scroll-behavior: smooth; }
+@layer components {
+  /* Enhanced button styles */
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105;
+    background: linear-gradient(90deg,#ff4d94,#ff8a00);
+  }
 
-body {
-  background: linear-gradient(180deg, #0f0810 0%, #120717 100%);
-  color: #fff;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105;
+    background: linear-gradient(135deg, #ff4d94 0%, #ff8a00 100%);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold border-2 border-white/20 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/40;
+  }
+
+  /* Enhanced card styles */
+  .card {
+    @apply bg-gradient-to-br from-[#120717]/60 via-[#1b0b1e]/40 to-[#2a0f25]/30 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-xl;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:border-white/20;
+  }
+
+  /* Section styles */
+  .section {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .section-header {
+    @apply text-center mb-12 md:mb-16;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-accent to-orange-400 bg-clip-text text-transparent;
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl text-gray-300 max-w-2xl mx-auto;
+  }
+
+  /* Utility classes */
+  .countdown-number {
+    @apply text-3xl md:text-5xl font-extrabold tracking-tight;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent to-orange-400 bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
 }
 
-/* small helpers */
-.btn-whatsapp {
-  @apply inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold shadow-lg;
-  background: linear-gradient(90deg,#ff4d94,#ff8a00);
-}
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
 
-.card {
-  @apply bg-gradient-to-br from-[#120717]/60 via-[#1b0b1e]/40 to-[#2a0f25]/30 backdrop-blur-md border border-white/10 rounded-2xl p-6;
-}
-
-.countdown-number {
-  @apply text-3xl md:text-5xl font-extrabold tracking-tight;
+  .backdrop-blur-glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+  }
 }
