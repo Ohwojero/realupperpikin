@@ -156,7 +156,6 @@ export default function Hero(){
               target="_blank"
               rel="noopener noreferrer"
               className="hero-social-icon"
-              style={{ color: link.color }}
               aria-label={link.name}
             >
               <Icon />

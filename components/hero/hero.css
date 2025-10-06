@@ -232,11 +232,33 @@
 }
 
 .hero-social-icon {
-  font-size: 1.8rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero-social-icon:hover {
-  transform: scale(1.2);
-  color: #ff4d94;
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-social-icon svg {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.hero-social-icon:hover svg {
+  background: linear-gradient(135deg, #ff4d94 0%, #ff8a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
