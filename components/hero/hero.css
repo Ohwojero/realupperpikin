@@ -1,0 +1,120 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.hero-bg.fade-in {
+  opacity: 1;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  z-index: 1;
+}
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  padding: 1rem;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.hero-content h1 span {
+  color: #ff4d94;
+}
+.hero-content p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+.hero-content a{
+  text-decoration: none;
+}
+.hero-btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  background: linear-gradient(90deg,#ff4d94,#ff8a00);
+  color: white;
+  font-weight: 600;
+}
+
+/* Carousel buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 50%;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+.prev-btn {
+  left: 1rem;
+}
+.next-btn {
+  right: 1rem;
+}
+
+/* Carousel indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 3;
+}
+.indicator {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.indicator.active {
+  background: #ff4d94;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content p { font-size: 0.9rem; }
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+}

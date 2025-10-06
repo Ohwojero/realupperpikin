@@ -1,0 +1,18 @@
+.venue-section {
+  padding: 5rem 1rem;
+  text-align: center;
+  background: #000;
+  color: white;
+}
+.venue-section h2 {
+  font-size: 2rem;
+  color: #ff8a00;
+  margin-bottom: 1rem;
+}
+.map-placeholder {
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-inline: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
