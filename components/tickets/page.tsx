@@ -13,21 +13,21 @@ export default function Tickets(){
       type:'VIP',
       price:'₦50,000',
       desc:'Enhanced experience with premium perks',
-      features: ['Front row seats', 'Free welcome drink', 'Meet & greet opportunity', 'Exclusive merchandise'],
+      features: ['Front row seats', 'Meet & greet opportunity', 'Exclusive merchandise'],
       popular: true
     },
     {
-      type:'VVIP',
+      type:'SEAT IN A TABLE',
       price:'₦300,000',
       desc:'Ultimate luxury experience',
-      features: ['Premium seating area', 'Backstage access', 'Personal meet & greet', 'VIP lounge access', 'Complimentary dinner', 'Exclusive photo session'],
+      features: ['This Ticket Admits (4) persons', 'Backstage access', 'Personal meet & greet'],
       popular: false
     },
     {
-      type:'PLATINUM',
+      type:'Sponsorship',
       price:'₦500,000',
       desc:'The ultimate Real Upper Pikin experience',
-      features: ['All VVIP benefits', 'Private after-party access', 'Personal chauffeur service', 'Custom merchandise package', 'Lifetime VIP status', 'Behind-the-scenes documentary'],
+      features: ['Custom merchandise package', 'Lifetime Sponsor status', 'Behind-the-scenes documentary'],
       popular: false
     },
   ]

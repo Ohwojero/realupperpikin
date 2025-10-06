@@ -62,7 +62,7 @@ function CountdownTimer() {
 export default function Hero(){
   const [index, setIndex] = useState(0)
   const [opacity, setOpacity] = useState(1)
-  const images = ['/images/p1.jpg','/images/p2.jpg', '/images/p3.jpg']
+  const images = ['/images/p1.jpg','/images/p2.jpg', '/images/p3.jpg','/images/p7.jpg','/images/p8.jpg','/images/p9.jpg','/images/p10.jpg','/images/p11.jpg','/images/p12.jpg']
 
   const changeSlide = (newIndex: number) => {
     setOpacity(0)

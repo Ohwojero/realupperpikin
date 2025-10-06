@@ -262,3 +262,18 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* Responsive for social icons */
+@media (max-width: 768px) {
+  .hero-social-icons {
+    right: 1rem;
+    gap: 0.3rem;
+  }
+  .hero-social-icon {
+    padding: 0.3rem;
+  }
+  .hero-social-icon svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

@@ -32,7 +32,7 @@ export default function Navbar(){
           <img src="/images/logo.png" alt="Logo" className="navbar-logo" />
           <span className="navbar-title">Real Upper Pikin</span>
         </div>
-e
+
         <nav className={`navbar-links ${open ? 'open' : ''}`}>
           <a href="#home" onClick={() => setOpen(false)}>Home</a>
           <a href="#tickets" onClick={() => setOpen(false)}>Tickets</a>

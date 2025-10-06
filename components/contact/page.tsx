@@ -40,7 +40,7 @@ const socialLinks = [
 
 const ContactPage = () => {
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <motion.h1
         className="contact-title"
         initial={{ opacity: 0, y: -50 }}
