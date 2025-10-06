@@ -3,6 +3,12 @@
   text-align: center;
   padding: 2rem 1rem;
   color: white;
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(90deg, rgba(255, 77, 148, 0.3), rgba(255, 138, 0, 0.3)) 1;
+  transition: border-image 0.3s ease;
+}
+.footer:hover {
+  border-image: linear-gradient(90deg, rgba(255, 77, 148, 0.8), rgba(255, 138, 0, 0.8)) 1;
 }
 .footer a {
   color: #ff4d94;

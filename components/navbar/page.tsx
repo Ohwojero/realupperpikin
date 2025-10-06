@@ -18,7 +18,10 @@ export default function Navbar(){
   return (
     <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
-        <img src="/images/logo.png" alt="Logo" className="navbar-logo" />
+        <div className="navbar-brand">
+          <img src="/images/logo.png" alt="Logo" className="navbar-logo" />
+          <span className="navbar-title">Real Upper Pikin</span>
+        </div>
 
         <nav className={`navbar-links ${open ? 'open' : ''}`}>
           <a href="#home">Home</a>

@@ -99,7 +99,7 @@ export default function Hero(){
           <span className="artist-name">Real Upper Pikin</span>
         </h1>
         <p>DEC 17TH 2025 • Red Carpet 4PM • Show 5PM</p>
-        <a href="https://wa.me/2349128132800" target="_blank" className="hero-btn">Buy Ticket on WhatsApp</a>
+        <a href="https://wa.me/2349128132800" target="_blank" className="hero-btn">Book Your Seat</a>
       </div>
       <CountdownTimer />
       <div className="carousel-indicators">
