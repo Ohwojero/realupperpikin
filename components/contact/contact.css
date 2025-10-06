@@ -1,0 +1,80 @@
+/* Custom styles for contact page */
+
+.contact-section {
+  background: linear-gradient(180deg, #0f0810 0%, #120717 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ff4d94 0%, #ff8a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-icon:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-icon svg {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover svg {
+  background: linear-gradient(135deg, #ff4d94 0%, #ff8a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+  .social-icons {
+    gap: 1rem;
+  }
+  .social-icon {
+    padding: 0.75rem;
+  }
+  .social-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

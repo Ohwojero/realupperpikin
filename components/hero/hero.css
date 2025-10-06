@@ -219,3 +219,24 @@
     font-size: 2rem;
   }
 }
+
+/* Social media icons in hero section */
+.hero-social-icons {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 5;
+}
+
+.hero-social-icon {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-social-icon:hover {
+  transform: scale(1.2);
+  color: #ff4d94;
+}

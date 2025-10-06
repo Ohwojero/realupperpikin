@@ -3,6 +3,7 @@ import Hero from '../../components/hero/page'
 import Tickets from '../../components/tickets/page'
 import Venue from '../../components/venue/page'
 import Footer from '../../components/footer/page'
+import ContactPage from '../../components/contact/page'
 
 export default function Page(){
   return (
@@ -11,6 +12,7 @@ export default function Page(){
       <Hero />
       <Tickets />
       <Venue />
+      <ContactPage/>
       <Footer />
     </main>
   )
