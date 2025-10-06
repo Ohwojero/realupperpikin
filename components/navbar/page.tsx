@@ -27,7 +27,6 @@ export default function Navbar(){
           <a href="#home">Home</a>
           <a href="#tickets">Tickets</a>
           <a href="#venue">Venue</a>
-          <a href="#about">About</a>
           <a className="buy-btn" href={wa} target="_blank">Buy Ticket 🎟️</a>
         </nav>
 
