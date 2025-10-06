@@ -13,6 +13,16 @@ export default function Navbar(){
     return ()=> window.removeEventListener('scroll', onScroll)
   },[])
 
+  useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      if (open && !(event.target as Element).closest('.navbar-container')) {
+        setOpen(false)
+      }
+    }
+    document.addEventListener('click', handleClickOutside)
+    return () => document.removeEventListener('click', handleClickOutside)
+  }, [open])
+
   const wa = 'https://wa.me/2349128132800?text=Hi!%20I%27d%20like%20to%20buy%20a%20ticket'
 
   return (
@@ -24,10 +34,11 @@ export default function Navbar(){
         </div>
 
         <nav className={`navbar-links ${open ? 'open' : ''}`}>
-          <a href="#home">Home</a>
-          <a href="#tickets">Tickets</a>
-          <a href="#venue">Venue</a>
-          <a className="buy-btn" href={wa} target="_blank">Buy Ticket 🎟️</a>
+          <a href="#home" onClick={() => setOpen(false)}>Home</a>
+          <a href="#tickets" onClick={() => setOpen(false)}>Tickets</a>
+          <a href="#venue" onClick={() => setOpen(false)}>Venue</a>
+           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+          <a className="buy-btn" href={wa} target="_blank" onClick={() => setOpen(false)}>Buy Ticket 🎟️</a>
         </nav>
 
         <button onClick={()=>setOpen(!open)} className="menu-toggle">
