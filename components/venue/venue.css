@@ -1,18 +1,93 @@
 .venue-section {
   padding: 5rem 1rem;
   text-align: center;
-  background: #000;
+  background: linear-gradient(180deg, #0f0810 0%, #120717 100%);
   color: white;
+  position: relative;
 }
+
+.venue-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(255, 77, 148, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255, 138, 0, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .venue-section h2 {
-  font-size: 2rem;
-  color: #ff8a00;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #ff4d94, #ff8a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  z-index: 1;
 }
+
+.venue-info {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  position: relative;
+  z-index: 1;
+}
+
+.venue-info h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff4d94;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.venue-address {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.venue-note {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff8a00;
+  margin-bottom: 1.5rem;
+}
+
+.venue-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #ff4d94 0%, #ff8a00 100%);
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 77, 148, 0.3);
+  border: 2px solid transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.venue-btn:hover {
+  background: linear-gradient(135deg, #e64587 0%, #e67e0a 100%);
+  box-shadow: 0 8px 25px rgba(255, 77, 148, 0.5);
+}
+
 .map-placeholder {
   margin-top: 2rem;
   max-width: 800px;
   margin-inline: auto;
   border-radius: 1rem;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }

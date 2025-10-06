@@ -71,7 +71,7 @@
 
 @media (max-width: 480px) {
   .ticket-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 1rem;
   }
   .tickets-section {
@@ -135,6 +135,9 @@
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  z-index: 10;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(255, 77, 148, 0.6);
 }
 
 .ticket-card h3 {
