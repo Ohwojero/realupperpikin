@@ -15,12 +15,22 @@ export default function Navbar(){
 
   useEffect(() => {
     const handleClickOutside = (event: Event) => {
-      if (open && !(event.target as Element).closest('.navbar-container')) {
+      if (open && !(event.target as Element).closest('.navbar-container')){
         setOpen(false)
       }
     }
     document.addEventListener('click', handleClickOutside)
     return () => document.removeEventListener('click', handleClickOutside)
+  }, [open])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (open) {
+        setOpen(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [open])
 
   const wa = 'https://wa.me/2349128132800?text=Hi!%20I%27d%20like%20to%20buy%20a%20ticket'
