@@ -133,7 +133,7 @@ export default function Hero(){
           <span className="date-text">A Date With</span>
           <span className="artist-name">Real Upper Pikin</span>
         </h1>
-        <p>DEC 7TH 2024 • Red Carpet 4PM • Show Starts 5PM</p>
+        <p>DEC 7TH 2025 • Red Carpet 4PM • Show Starts 5PM</p>
         <a href="https://wa.me/2349128132800" target="_blank" className="hero-btn">Be Part of the Experience — Book Now</a>
       </div>
       <CountdownTimer />
