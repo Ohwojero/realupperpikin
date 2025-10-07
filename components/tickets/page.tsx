@@ -6,7 +6,7 @@ export default function Tickets(){
       type:'Regular',
       price:'₦20,000',
       desc:'Perfect for fans who want to experience the show',
-      features: ['Access to main show', 'General admission seating', 'Event merchandise discount'],
+      features: ['Access to main show', 'General admission seating'],
       popular: false
     },
     {
@@ -20,14 +20,14 @@ export default function Tickets(){
       type:'SEAT IN A TABLE',
       price:'₦300,000',
       desc:'Ultimate luxury experience',
-      features: ['This Ticket Admits (4) persons', 'Backstage access', 'Personal meet & greet'],
+      features: ['This Ticket Admits (4) persons'],
       popular: false
     },
     {
       type:'Sponsorship',
       price:'₦500,000',
       desc:'The ultimate Real Upper Pikin experience',
-      features: ['This Ticket Admits (8) persons', 'Front-row fame', 'Lifetime Sponsor status',],
+      features: ['This Ticket Admits (8) persons', 'Front-row fame'],
       popular: false
     },
   ]

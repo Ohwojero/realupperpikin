@@ -119,12 +119,13 @@
 .ticket-card.popular {
   border: 2px solid #ff4d94;
   box-shadow: 0 0 30px rgba(255, 77, 148, 0.4);
+  
 }
 
 .ticket-card.popular::after {
   content: 'MOST POPULAR';
   position: absolute;
-  top: -12px;
+  top: -4px;
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(45deg, #ff4d94, #ff8a00);
