@@ -62,7 +62,7 @@ function CountdownTimer() {
 export default function Hero(){
   const [index, setIndex] = useState(0)
   const [opacity, setOpacity] = useState(1)
-  const images = ['/images/p1.jpg','/images/p2.jpg', '/images/p3.jpg','/images/p7.jpg','/images/p8.jpg','/images/p9.jpg','/images/p10.jpg','/images/p11.jpg','/images/p12.jpg']
+  const images = ['/images/p3.jpg','/images/p2.jpg', '/images/p1.jpg','/images/p7.jpg','/images/p8.jpg','/images/p9.jpg','/images/p10.jpg','/images/p11.jpg','/images/p12.jpg']
 
   const changeSlide = (newIndex: number) => {
     setOpacity(0)
@@ -133,7 +133,7 @@ export default function Hero(){
           <span className="date-text">A Date With</span>
           <span className="artist-name">Real Upper Pikin</span>
         </h1>
-        <p>DEC 17TH 2025 • Red Carpet 4PM • Show Starts 5PM</p>
+        <p>DEC 7TH 2025 • Red Carpet 4PM • Show Starts 5PM</p>
         <a href="https://wa.me/2349128132800" target="_blank" className="hero-btn">Be Part of the Experience — Book Now</a>
       </div>
       <CountdownTimer />

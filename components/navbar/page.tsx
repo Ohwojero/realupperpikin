@@ -35,6 +35,7 @@ export default function Navbar(){
 
         <nav className={`navbar-links ${open ? 'open' : ''}`}>
           <a href="#home" onClick={() => setOpen(false)}>Home</a>
+          <a href="#about" onClick={() => setOpen(false)}>About</a>
           <a href="#tickets" onClick={() => setOpen(false)}>Tickets</a>
           <a href="#venue" onClick={() => setOpen(false)}>Venue</a>
            <a href="#contact" onClick={() => setOpen(false)}>Contact</a>

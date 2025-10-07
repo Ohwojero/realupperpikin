@@ -13,7 +13,7 @@ export default function Tickets(){
       type:'VIP',
       price:'₦50,000',
       desc:'Enhanced experience with premium perks',
-      features: ['Front row seats', 'Meet & greet opportunity', 'Exclusive merchandise'],
+      features: ['Front row seats', 'Meet & greet opportunity', 'Join the fun and laugh till your cheeks hurt'],
       popular: true
     },
     {
@@ -27,7 +27,7 @@ export default function Tickets(){
       type:'Sponsorship',
       price:'₦500,000',
       desc:'The ultimate Real Upper Pikin experience',
-      features: ['Custom merchandise package', 'Lifetime Sponsor status', 'Behind-the-scenes documentary'],
+      features: ['This Ticket Admits (8) persons', 'Front-row fame', 'Lifetime Sponsor status',],
       popular: false
     },
   ]
