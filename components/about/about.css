@@ -35,37 +35,22 @@
 .about-card {
   position: relative;
   overflow: hidden;
-  animation: slideIn 0.8s ease-out forwards;
   opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.about-card:nth-child(odd) {
-  animation-name: slideInLeft;
+.about-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.about-card:nth-child(even) {
-  animation-name: slideInRight;
+.about-card:nth-child(odd).animate-in {
+  animation: slideInLeft 0.8s ease-out;
 }
 
-.about-card:nth-child(1) { animation-delay: 0.1s; }
-.about-card:nth-child(2) { animation-delay: 0.2s; }
-.about-card:nth-child(3) { animation-delay: 0.3s; }
-.about-card:nth-child(4) { animation-delay: 0.4s; }
-.about-card:nth-child(5) { animation-delay: 0.5s; }
-.about-card:nth-child(6) { animation-delay: 0.6s; }
-.about-card:nth-child(7) { animation-delay: 0.7s; }
-.about-card:nth-child(8) { animation-delay: 0.8s; }
-.about-card:nth-child(9) { animation-delay: 0.9s; }
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.about-card:nth-child(even).animate-in {
+  animation: slideInRight 0.8s ease-out;
 }
 
 @keyframes slideInLeft {

@@ -1,9 +1,32 @@
+'use client';
+
 import Image from 'next/image';
+import { useEffect } from 'react';
 import './about.css';
 
 export default function About() {
+  useEffect(() => {
+    const cards = document.querySelectorAll('.about-card');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add('animate-in');
+            }, index * 100);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0f0810] via-[#120717] to-[#1b0b1e]">
+    <div id="about" className="min-h-screen bg-gradient-to-br from-[#0f0810] via-[#120717] to-[#1b0b1e]">
       {/* Hero Section */}
       <section className="about-hero relative py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto text-center">
