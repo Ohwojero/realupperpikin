@@ -13,7 +13,7 @@ function CountdownTimer() {
   })
 
   useEffect(() => {
-    const targetDate = new Date('2025-12-17T00:00:00').getTime()
+    const targetDate = new Date(Date.now() + 61 * 24 * 60 * 60 * 1000).getTime()
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -133,7 +133,7 @@ export default function Hero(){
           <span className="date-text">A Date With</span>
           <span className="artist-name">Real Upper Pikin</span>
         </h1>
-        <p>DEC 7TH 2025 • Red Carpet 4PM • Show Starts 5PM</p>
+        <p>DEC 7TH 2024 • Red Carpet 4PM • Show Starts 5PM</p>
         <a href="https://wa.me/2349128132800" target="_blank" className="hero-btn">Be Part of the Experience — Book Now</a>
       </div>
       <CountdownTimer />
