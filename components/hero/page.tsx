@@ -13,7 +13,7 @@ function CountdownTimer() {
   })
 
   useEffect(() => {
-    const targetDate = new Date(Date.now() + 61 * 24 * 60 * 60 * 1000).getTime()
+    const targetDate = new Date('2025-12-07T17:00:00').getTime()
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
